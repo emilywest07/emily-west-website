@@ -86,11 +86,13 @@ export type ResearchProject = {
 export type ResearchWork = {
   id: string;
   title: string;
+  subtitle?: string;
   status: string;
   venue?: string;
   year?: number;
   authors?: Author[];
   description: string;
+  availabilityNote?: string;
   abstract?: string;
   abstractIsPlaceholder?: boolean;
   links?: {

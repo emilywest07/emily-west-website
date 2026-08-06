@@ -4,7 +4,7 @@ export const highlightedProjectLinks = {
   recursiveReflectionManuscript: "https://www.dropbox.com/scl/fi/rl4c4xy3in1d5f49dtw1c/West_Belief_Change.pdf?rlkey=7knd3ixmkyjgcmlq1su4xjue3&dl=0",
   recursiveReflectionOsf: "https://osf.io/pnu2t/overview",
   revealingFrameworksMethod: "https://experiment2-app.onrender.com/static/index.html?",
-  revealingFrameworksGithub: "https://github.com/emilywest07/experiment2-app",
+  revealingFrameworksGithub: "https://github.com/emilywest07/recursive-reflection-demo",
 } as const;
 
 // Replace these URLs only after authoritative project destinations are supplied.
@@ -32,9 +32,9 @@ export const researchClaims: ResearchClaim[] = [
     shortTitle: "Framework Construction and Reorganization",
     question: "How are explanatory frameworks constructed, maintained, and reorganized—and what makes a person judge that an existing explanation is no longer adequate?",
     summary: "Develops explanatory frameworks as cognitive structures and investigates the mechanisms through which they change.",
-    contribution: "This research develops explanatory frameworks as a theoretical object: organized structures of beliefs, values, identities, causal interpretations, and decision rules through which people make sense of experience. It asks how these frameworks become more encompassing, how people evaluate their adequacy, and how reflection on explanatory gaps can produce structural revision rather than the simple addition or subtraction of individual beliefs.",
-    evidence: "The work combines conceptual development with experimental studies of political reasoning and direct observation of explanatory processes in conversation. It uses longitudinal belief measures, structured conversational interventions, and transcript-based coding to distinguish framework construction, testing, inadequacy recognition, and revision as they unfold.",
-    nextQuestions: "How do explanatory frameworks develop over time? When does explanatory pressure produce revision rather than defense or disengagement? Can more encompassing frameworks be deliberately cultivated? How do social interaction, education, and AI-mediated communication affect the capacity to reorganize one’s understanding?",
+    contribution: "This research develops explanatory frameworks as a theoretical object: the interconnected beliefs, values, identities, causal interpretations, and decision rules people use to explain political and social life. It investigates how these frameworks grow, how people judge their adequacy, and how structural revision occurs.",
+    evidence: "The research combines theory, experiments, AI-mediated conversation, and transcript coding to observe explanatory frameworks as they are constructed, challenged, and reorganized in real time.",
+    nextQuestions: "How do explanatory frameworks develop over time? Can more encompassing frameworks be deliberately cultivated? How do education, conversation, and AI influence explanatory growth?",
     relatedClaimIds: ["claim-02-direct-observation", "claim-03-recursive-learning"],
     order: 1,
     isPlaceholder: false,
@@ -92,8 +92,12 @@ export const researchClaims: ResearchClaim[] = [
         id: "partisanship-social-identity",
         title: "Partisanship as a Social Identity: Implications for Polarization",
         status: "Journal Article",
-        venue: "Political Behavior (2021)",
-        description: "Shows how partisan identity structures political judgment and polarization, providing an earlier foundation for understanding how political identities become embedded within broader explanatory frameworks.",
+        venue: "Political Behavior (2022)",
+        authors: [
+          { givenName: "Emily", familyName: "West", displayName: "Emily A. West", isEmilyWest: true },
+          { givenName: "Shanto", familyName: "Iyengar", displayName: "Shanto Iyengar" },
+        ],
+        description: "Shows that partisanship functions as an important social identity while finding limited evidence that identity salience alone accounts for affective polarization.",
         abstract: "The claim that partisanship has developed into a social identity is one of the dominant explanations for the current rising levels of affective polarization among the U.S. electorate. We provide evidence that partisanship functions as a social identity, but that the salience of partisan identity—in and of itself—does not account for increased affective polarization. Using a two-wave panel survey capturing natural variation in the salience of politics, we find that partisanship contributes more to individuals’ self-concept in times of heightened political salience. We also show that partisans can be detached from their Democratic or Republican identity by having them focus on individuating characteristics through a self-affirmation treatment. However, we find only limited evidence that when partisan social identity is made less salient, either by way of natural variation in political context or through a self-affirmation treatment, partisans are any less inclined to express in-party favoritism and out-party hostility. Taken together, our evidence shows that partisanship does operate as an important social identity, but that affective polarization is likely attributable to more than the classic in-group versus out-group distinction.",
         links: [
           {
@@ -112,19 +116,19 @@ export const researchClaims: ResearchClaim[] = [
     shortTitle: "Direct Observation of Explanatory Frameworks",
     question: "How can explanatory frameworks be observed directly rather than inferred indirectly from isolated beliefs or attitudes?",
     summary: "Develops conversational methods for observing explanatory frameworks as they emerge and reorganize in real time.",
-    contribution: "This research develops conversational and computational methods for eliciting explanatory frameworks and observing how they emerge, change, and reorganize in real time.",
-    evidence: "This research combines AI-mediated conversation, transcript coding, experimental design, and computational analysis to transform explanatory frameworks from latent theoretical constructs into directly observable objects of study.",
-    nextQuestions: "Can conversational methods measure explanatory frameworks outside politics? How can AI improve the reliability and validity of explanatory-framework measurement? What new forms of scientific observation become possible when reasoning is studied dynamically rather than through static survey responses?",
+    contribution: "This research develops conversational and computational methods to elicit explanatory frameworks and track how they emerge, change, and reorganize in real time.",
+    evidence: "AI-mediated conversation, transcript coding, experiments, and computational analysis make explanatory frameworks directly observable rather than latent constructs inferred from static responses.",
+    nextQuestions: "Can conversational methods measure frameworks beyond politics? Can AI improve measurement reliability and validity? What becomes observable when reasoning is studied dynamically?",
     relatedClaimIds: ["claim-01-framework-construction", "claim-03-recursive-learning"],
     projects: [
       {
         id: "revealing-explanatory-frameworks",
         title: "Revealing Explanatory Frameworks",
-        subtitle: "A structured conversational method for eliciting and measuring political reasoning.",
+        subtitle: "A structured conversational method for eliciting and measuring explanatory frameworks.",
         descriptionParagraphs: [
           "Political beliefs are typically studied as individual attitudes or ideological positions. I argue that they are better understood as parts of broader explanatory frameworks that organize values, principles, empirical assumptions, and experiences into coherent understandings of the world. Using transcripts from a large-scale conversational study, I develop a framework for identifying commitments, tensions, reconciliation strategies, and explanatory gaps as they emerge during political discussion. The paper provides the first descriptive account of how people maintain coherence among competing commitments, establishing a new foundation for studying political reasoning through explanatory frameworks.",
         ],
-        status: "Experimental Paper",
+        status: "Measurement Paper",
         links: [
           { label: "Try the Method", href: highlightedProjectLinks.revealingFrameworksMethod, isPrimary: true, isExternal: true },
           { label: "GitHub Repository", href: highlightedProjectLinks.revealingFrameworksGithub, isExternal: true },
@@ -133,6 +137,19 @@ export const researchClaims: ResearchClaim[] = [
       },
     ],
     works: [
+      {
+        id: "ideological-constraint-interaction",
+        title: "Ideological Constraint in Interaction: How Conversations Shape the Structure of Political Beliefs",
+        status: "Working Paper",
+        authors: [
+          { givenName: "Emily", familyName: "West", displayName: "Emily A. West", isEmilyWest: true },
+          { givenName: "Emma K.", familyName: "Swanson", displayName: "Emma K. Swanson" },
+          { givenName: "Donald P.", familyName: "Green", displayName: "Donald P. Green" },
+        ],
+        description: "Investigates how conversational environments shape the apparent coherence of political beliefs, showing that ideological constraint can emerge through interaction even in the absence of deeper explanatory framework revision.",
+        availabilityNote: "Manuscript in preparation",
+        abstract: "To what extent does ideological constraint emerge through political conversation? Existing research typically treats ideological constraint as a stable property of individuals' belief systems. Using more than 800 transcripts from experimentally moderated political discussions, this paper examines whether the apparent coherence of political beliefs depends partly on the conversational environments in which they are expressed. Participants discussed police reform, affirmative action, abortion, and climate change with confederates whose partisan identity and ideological consistency were experimentally varied. While participants' policy positions shifted primarily in response to the arguments they encountered rather than the confederate's partisan identity, the apparent constraint among their expressed attitudes also changed systematically. Correlations across political positions were stronger following conversations with ideologically orthodox Democrats and Republicans than after discussions with counter-typical partisans. These findings suggest that ideological constraint is not solely an internal cognitive property but can emerge through interaction with others. More broadly, the study demonstrates the value of combining experimental interventions with conversational data to study the organization of political belief systems.",
+      },
       {
         id: "political-reasoning-tensions",
         title: "How People Hold Political Beliefs Together: The Structure of Tensions in Political Reasoning",
@@ -172,9 +189,9 @@ export const researchClaims: ResearchClaim[] = [
     shortTitle: "Recursive Explanatory Organization Improves Human Learning",
     question: "Does recursive explanatory organization improve how people understand, remember, transfer, and communicate new knowledge?",
     summary: "Tests whether recursively structured explanations confer a cognitive advantage beyond coherence alone.",
-    contribution: "This research tests whether recursively structured explanations confer a cognitive advantage beyond coherence alone. It examines whether organizing information hierarchically, with broad principles generating increasingly specific rules, improves learning and produces more transferable explanatory frameworks.",
-    evidence: "The initial study randomly assigns participants to learn a novel strategy game from materials containing identical information but different explanatory structures. Outcomes include comprehension, memory, transfer, game performance, and participants’ ability to teach the game to someone else.",
-    nextQuestions: "Do recursive explanations improve learning across domains? Which outcomes benefit most: memory, transfer, performance, or explanation? Does recursive organization become especially valuable when learners must generalize, teach, or revise what they understand?",
+    contribution: "This research tests whether recursive explanations improve learning beyond coherence alone. It examines whether hierarchical organization produces more transferable understanding.",
+    evidence: "Participants learn identical strategy-game content arranged in different explanatory structures. Measures include comprehension, memory, transfer, performance, and the ability to teach the game.",
+    nextQuestions: "Do recursive explanations improve learning across domains? Which outcomes benefit most? Are they especially valuable when people must generalize, teach, or revise their understanding?",
     relatedClaimIds: ["claim-01-framework-construction", "claim-02-direct-observation"],
     projects: [
       {

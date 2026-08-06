@@ -5,8 +5,8 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const navigation = [
-  ["Home", "/"], ["Research", "/research"], ["Additional Publications", "/additional-publications"],
-  ["Teaching", "/teaching"], ["CV", "/cv"], ["Contact", "/contact"],
+  ["Home", "/"], ["Research", "/research"], ["Scholarship", "/publications"],
+  ["CV", "/cv"], ["Contact", "/contact"],
 ] as const;
 
 export function SiteHeader() {
