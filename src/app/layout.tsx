@@ -10,13 +10,13 @@ const literata = Literata({ variable: "--font-literata", subsets: ["latin"], dis
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteContent.siteUrl),
-  title: { default: "Emily A. West | Political Scientist", template: "%s | Emily A. West" },
-  description: siteContent.heroQuestion,
+  title: { default: siteContent.siteTitle, template: "%s | Emily A. West" },
+  description: siteContent.socialDescription,
   applicationName: "Emily A. West",
   authors: [{ name: "Emily A. West" }],
   creator: "Emily A. West",
-  openGraph: { type: "website", siteName: "Emily A. West", title: "Emily A. West | Political Scientist", description: siteContent.heroQuestion, images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: siteContent.socialImageAlt }] },
-  twitter: { card: "summary_large_image", title: "Emily A. West | Political Scientist", description: siteContent.heroQuestion, images: ["/opengraph-image"] },
+  openGraph: { type: "website", siteName: "Emily A. West", title: siteContent.siteTitle, description: siteContent.socialDescription, images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: siteContent.socialImageAlt }] },
+  twitter: { card: "summary_large_image", title: siteContent.siteTitle, description: siteContent.socialDescription, images: [{ url: "/opengraph-image", alt: siteContent.socialImageAlt }] },
   robots: { index: true, follow: true },
 };
 
