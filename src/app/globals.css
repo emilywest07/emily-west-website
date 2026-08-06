@@ -70,13 +70,13 @@ main { min-height:65vh; }
 .research-opening { padding:clamp(2rem,3.5vw,3.25rem) 0 clamp(2.4rem,4vw,3.75rem);border-bottom:1px solid var(--line); }
 .research-opening-composition { display:flex;justify-content:center; }
 .research-opening-map { width:min(100%,72rem);text-align:center; }
-.research-opening-map h1 { margin:0 0 .3rem;font-family:var(--serif);font-size:clamp(1.45rem,2vw,2rem);font-weight:450;line-height:1.08;letter-spacing:-.035em;font-variant-ligatures:common-ligatures no-discretionary-ligatures;font-feature-settings:"dlig" 0; }
+.research-opening-map>.eyebrow { margin-bottom:.45rem; }
 .research-opening-map .approaches-intro { max-width:46rem;margin:0 auto;color:var(--muted);font-family:var(--serif);font-size:clamp(1rem,1.3vw,1.15rem);line-height:1.45; }
-.research-opening .concept-map { margin-top:clamp(1rem,1.6vw,1.5rem); }
-.research-opening .central-question { width:min(100%,52rem);padding:1.2rem 1.25rem 1.35rem; }
+.research-opening .concept-map { margin-top:clamp(.75rem,1.25vw,1.1rem); }
+.research-opening .central-question { width:min(100%,52rem);padding:1.3rem 1.25rem 1.45rem; }
 .research-opening .central-question::after { height:1.65rem; }
 .research-opening .central-question span { margin-bottom:.45rem;font-size:.62rem; }
-.research-opening .central-question strong { font-size:clamp(1.9rem,3vw,2.25rem);line-height:1.12; }
+.research-opening .central-question h1 { font-size:clamp(2rem,3.2vw,2.4rem);line-height:1.1; }
 .research-opening .claim-branches { gap:clamp(1.25rem,2.5vw,2.5rem);padding-top:1.65rem; }
 .research-opening .claim-branches::before { top:1.65rem; }
 .research-opening .claim-branches a { padding-top:1.3rem;text-align:center; }
@@ -91,7 +91,7 @@ main { min-height:65vh; }
 .central-question { position:relative;width:min(100%,43rem);margin-inline:auto;padding:1.4rem clamp(1.4rem,4vw,3rem);border-block:1px solid var(--ink);text-align:center; }
 .central-question::after { content:"";position:absolute;left:50%;top:100%;height:3.5rem;border-left:1px solid var(--line); }
 .central-question span { display:block;margin-bottom:.75rem;color:var(--accent-dark);font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.13em; }
-.central-question strong { display:block;font-family:var(--serif);font-size:clamp(1.55rem,3vw,2.5rem);font-weight:500;line-height:1.2;letter-spacing:-.025em; }
+.central-question h1 { display:block;margin:0;font-family:var(--serif);font-size:clamp(1.55rem,3vw,2.5rem);font-weight:500;line-height:1.2;letter-spacing:-.025em;font-variant-ligatures:common-ligatures no-discretionary-ligatures;font-feature-settings:"dlig" 0; }
 .claim-branches { position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.5rem,4vw,3.5rem);padding-top:3.5rem; }
 .claim-branches::before { content:"";position:absolute;left:16.666%;right:16.666%;top:3.5rem;border-top:1px solid var(--line); }
 .claim-branches a { position:relative;padding-top:2.25rem;text-decoration:none; }

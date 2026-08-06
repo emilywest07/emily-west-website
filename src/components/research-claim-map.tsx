@@ -20,7 +20,7 @@ export function ResearchClaimMap({ claims, question }: { claims: MapClaim[]; que
   }, [claims]);
 
   return <div className="concept-map">
-    <div className="central-question"><span>Overarching question</span><strong>{question}</strong></div>
+    <div className="central-question"><span>Overarching question</span><h1>{question}</h1></div>
     <nav className="claim-branches" aria-label="Scientific claims organized around the overarching question">
       {claims.map((claim,index) => <a className={activeId === claim.id ? "is-current" : undefined} href={`#${claim.id}`} aria-current={activeId === claim.id ? "location" : undefined} key={claim.id}><span>Claim 0{index+1}</span><h3>{claim.mapTitle}</h3></a>)}
     </nav>
