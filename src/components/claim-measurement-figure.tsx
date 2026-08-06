@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useFigureVisibility } from "@/hooks/use-figure-visibility";
 
 const titleId = "claim-measurement-figure-title";
 const descriptionId = "claim-measurement-figure-description";
@@ -31,15 +32,16 @@ type LinkedProps = {
 
 function LinkedButton({ id, activeId, setActiveId, className = "", children }: LinkedProps) {
   const linked = activeId ? highlightMap[activeId]?.includes(id) : false;
-  return <button className={`${className} ${linked ? "is-linked" : ""}`} type="button" onMouseEnter={() => setActiveId(id)} onMouseLeave={() => setActiveId(null)} onFocus={() => setActiveId(id)} onBlur={() => setActiveId(null)}>{children}</button>;
+  return <button className={`${className} event-${id} ${linked ? "is-linked" : ""}`} type="button" onMouseEnter={() => setActiveId(id)} onMouseLeave={() => setActiveId(null)} onFocus={() => setActiveId(id)} onBlur={() => setActiveId(null)}>{children}</button>;
 }
 
 export function ClaimMeasurementFigure() {
   const [activeId, setActiveId] = useState<string | null>(null);
+  const { ref, isActive } = useFigureVisibility<HTMLElement>();
 
   const linked = (id: string) => activeId ? highlightMap[activeId]?.includes(id) : false;
 
-  return <figure className="claim-measurement-figure" aria-labelledby={titleId} aria-describedby={`${descriptionId} ${captionId}`}>
+  return <figure ref={ref} className={`claim-measurement-figure ${isActive ? "is-animating" : ""}`} aria-labelledby={titleId} aria-describedby={`${descriptionId} ${captionId}`}>
     <h3 id={titleId}>Conversation, Coding, and Observed Explanatory Framework</h3>
     <p className="sr-only" id={descriptionId}>A transcript feed becomes coded explanatory objects, revealing a framework in which a challenge produces recognition that the decision rule may be inadequate, without showing completed revision.</p>
     <div className="claim-measurement-panels">
@@ -47,11 +49,11 @@ export function ClaimMeasurementFigure() {
         <h4 id="conversation-panel-title"><span>01</span>Conversation</h4>
         <div className="transcript-window">
           <div className="transcript-feed">
-            <LinkedButton id="t-opening" activeId={activeId} setActiveId={setActiveId} className="transcript-entry participant-entry"><span>Participant</span>“I think <mark className={linked("c-policy") ? "is-linked-phrase" : ""}>preferential hiring is wrong</mark> and <mark className={linked("c-value") ? "is-linked-phrase" : ""}>everyone should have a chance</mark>.”</LinkedButton>
+            <LinkedButton id="t-opening" activeId={activeId} setActiveId={setActiveId} className="transcript-entry participant-entry"><span>Participant</span>“I think <mark className={`coded-phrase phrase-policy ${linked("c-policy") ? "is-linked-phrase" : ""}`}>preferential hiring is wrong</mark> and <mark className={`coded-phrase phrase-value ${linked("c-value") ? "is-linked-phrase" : ""}`}>everyone should have a chance</mark>.”</LinkedButton>
             <p className="transcript-entry interlocutor-entry"><span>Interlocutor</span>“What does it mean, in practice, for a hiring process to consider all qualified candidates fairly?”</p>
-            <LinkedButton id="t-rule" activeId={activeId} setActiveId={setActiveId} className="transcript-entry participant-entry"><span>Participant</span>“<mark className={linked("c-rule") ? "is-linked-phrase" : ""}>Take the time to actually go through all resumes and compare what the company needs and what the candidate can offer</mark>.”</LinkedButton>
+            <LinkedButton id="t-rule" activeId={activeId} setActiveId={setActiveId} className="transcript-entry participant-entry"><span>Participant</span>“<mark className={`coded-phrase phrase-rule ${linked("c-rule") ? "is-linked-phrase" : ""}`}>Take the time to actually go through all resumes and compare what the company needs and what the candidate can offer</mark>.”</LinkedButton>
             <p className="transcript-entry interlocutor-entry"><span>Interlocutor</span>“What feature would make your rule stop applying?”</p>
-            <LinkedButton id="t-gap" activeId={activeId} setActiveId={setActiveId} className="transcript-entry participant-entry"><span>Participant</span>“<mark className={linked("c-gap") ? "is-linked-phrase" : ""}>I really don’t know</mark>.”</LinkedButton>
+            <LinkedButton id="t-gap" activeId={activeId} setActiveId={setActiveId} className="transcript-entry participant-entry"><span>Participant</span>“<mark className={`coded-phrase phrase-gap ${linked("c-gap") ? "is-linked-phrase" : ""}`}>I really don’t know</mark>.”</LinkedButton>
           </div>
         </div>
         <span className="claim-measurement-arrow" aria-hidden="true"/>

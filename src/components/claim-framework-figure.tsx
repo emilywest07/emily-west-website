@@ -1,3 +1,7 @@
+"use client";
+
+import { useFigureVisibility } from "@/hooks/use-figure-visibility";
+
 const figureTitleId = "claim-framework-figure-title";
 const figureDescriptionId = "claim-framework-figure-description";
 const figureCaptionId = "claim-framework-figure-caption";
@@ -52,13 +56,14 @@ function ReorganizationPanel() {
 }
 
 export function ClaimFrameworkFigure() {
+  const { ref, isActive } = useFigureVisibility<HTMLElement>();
   const panels = [
     { number: "01", title: "Framework", content: <FrameworkPanel/> },
     { number: "02", title: "Challenge", content: <ChallengePanel/> },
     { number: "03", title: "Reorganization", content: <ReorganizationPanel/> },
   ];
 
-  return <figure className="claim-framework-figure" aria-labelledby={figureTitleId} aria-describedby={`${figureDescriptionId} ${figureCaptionId}`}>
+  return <figure ref={ref} className={`claim-framework-figure ${isActive ? "is-animating" : ""}`} aria-labelledby={figureTitleId} aria-describedby={`${figureDescriptionId} ${figureCaptionId}`}>
     <h3 id={figureTitleId}>Framework Construction, Challenge, and Reorganization</h3>
     <p className="sr-only" id={figureDescriptionId}>A stable explanatory framework tests an external challenge, recognizes that its existing account no longer fits, and reorganizes relationships among continuing identity, value, principle, and policy commitments.</p>
     <div className="claim-framework-panels">
