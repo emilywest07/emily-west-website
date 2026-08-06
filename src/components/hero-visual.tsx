@@ -85,6 +85,6 @@ export function HeroVisual() {
         {stage < 3 && <span className={`stage-arrow ${active === stage ? "is-active" : ""}`} aria-hidden="true"/>}
       </div>)}
     </div>
-    <figcaption id="framework-caption">An explanatory framework meets something it cannot readily contain. Its elements can then be defended, discarded, reinterpreted, or reorganized.</figcaption>
+    <figcaption id="framework-caption">An explanatory framework encounters a challenge it cannot readily contain. Its elements can then be defended, discarded, reinterpreted, or reorganized.</figcaption>
   </figure>;
 }

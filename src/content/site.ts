@@ -14,7 +14,7 @@ export const siteContent = {
   office: "",
   biography: PLACEHOLDER,
   heroIntroduction:
-    "We do not simply accumulate new beliefs. We construct increasingly encompassing explanations capable of integrating more of our experience into a coherent understanding of the world. Yet inhabiting the space between an explanation that no longer adequately explains our experience and one that has not yet fully taken shape can be one of the most cognitively difficult experiences we face.",
+    "We do not simply accumulate new beliefs. We build explanatory frameworks that organize beliefs, values, identities, and experiences into coherent understandings of the world. My research investigates how these frameworks are constructed, reorganized, observed, and used to support learning.",
   teachingPhilosophy: PLACEHOLDER,
   courses: [] as { title: string; term?: string; description?: string }[],
   profiles: [] as { label: string; url: string }[],
