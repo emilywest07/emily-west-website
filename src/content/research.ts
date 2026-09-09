@@ -1,7 +1,7 @@
 import type { ResearchClaim } from "./types";
 
 export const highlightedProjectLinks = {
-  recursiveReflectionManuscript: "https://dropbox.com/scl/fi/mewwwjkov3phn6xe0d6xh/West_Recursive_Reflection_Theory.pdf?rlkey=npe3okysbmkv42fkhpob8sk5y&dl=0",
+  recursiveReflectionManuscript: "https://www.dropbox.com/scl/fi/mewwwjkov3phn6xe0d6xh/West_Recursive_Reflection_Theory.pdf?rlkey=npe3okysbmkv42fkhpob8sk5y&e=1&dl=0",
   recursiveReflectionOsf: "https://osf.io/pnu2t/overview",
   revealingFrameworksMethod: "https://experiment2-app.onrender.com/static/index.html?",
   revealingFrameworksGithub: "https://github.com/emilywest07/recursive-reflection-demo",
