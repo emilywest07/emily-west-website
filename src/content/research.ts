@@ -1,7 +1,7 @@
 import type { ResearchClaim } from "./types";
 
 export const highlightedProjectLinks = {
-  recursiveReflectionManuscript: "https://www.dropbox.com/scl/fi/rl4c4xy3in1d5f49dtw1c/West_Belief_Change.pdf?rlkey=7knd3ixmkyjgcmlq1su4xjue3&dl=0",
+  recursiveReflectionManuscript: "https://dropbox.com/scl/fi/mewwwjkov3phn6xe0d6xh/West_Recursive_Reflection_Theory.pdf?rlkey=npe3okysbmkv42fkhpob8sk5y&dl=0",
   recursiveReflectionOsf: "https://osf.io/pnu2t/overview",
   revealingFrameworksMethod: "https://experiment2-app.onrender.com/static/index.html?",
   revealingFrameworksGithub: "https://github.com/emilywest07/recursive-reflection-demo",
@@ -33,7 +33,7 @@ export const researchClaims: ResearchClaim[] = [
     question: "How are explanatory frameworks constructed, maintained, and reorganized—and what makes a person judge that an existing explanation is no longer adequate?",
     summary: "Develops explanatory frameworks as cognitive structures and investigates the mechanisms through which they change.",
     contribution: "This research develops explanatory frameworks as a theoretical object: the interconnected beliefs, values, identities, causal interpretations, and decision rules people use to explain political and social life. It investigates how these frameworks grow, how people judge their adequacy, and how structural revision occurs.",
-    evidence: "The research combines theory, experiments, AI-mediated conversation, and transcript coding to observe explanatory frameworks as they are constructed, challenged, and reorganized in real time.",
+    evidence: "The research combines theory, experiments, AI-mediated conversation, and transcript coding to examine explanatory frameworks as they are constructed, evaluated, and revised during political conversation.",
     nextQuestions: "How do explanatory frameworks develop over time? Can more encompassing frameworks be deliberately cultivated? How do education, conversation, and AI influence explanatory growth?",
     relatedClaimIds: ["claim-02-direct-observation", "claim-03-recursive-learning"],
     order: 1,
@@ -42,12 +42,12 @@ export const researchClaims: ResearchClaim[] = [
       {
         id: "recursive-reflection-theory",
         title: "Recursive Reflection Theory",
-        subtitle: "A theory of how people revise political beliefs by evaluating their own explanatory frameworks.",
+        subtitle: "A theory identifying a pathway to political belief revision through the evaluation of one’s own explanatory framework.",
         summary: undefined,
         detail: undefined,
         descriptionParagraphs: [
-          "Recursive Reflection Theory proposes that political belief revision occurs not because people simply encounter new information, but because they recursively evaluate the explanations supporting their own beliefs. Belief change begins when individuals conclude that their existing explanatory framework is no longer an acceptable account of why they hold the position they do.",
-          "To investigate this process, I combine experimental political discussion, AI-mediated conversations, and transcript-based measurement to observe explanatory frameworks as they reorganize in real time. Together, these studies suggest that interventions traditionally understood as persuasion may instead work by prompting citizens to re-evaluate the adequacy of their own explanations rather than by simply transmitting new political beliefs.",
+          "Recursive Reflection Theory identifies a pathway to political belief revision through recursive evaluation of one’s own explanatory framework. In Recursive Reflective Reasoning, individuals’ earlier explanations—and the relationships through which their commitments support a political conclusion—become objects of subsequent evaluation. When that justificatory architecture no longer adequately supports the conclusion, political belief revision can follow.",
+          "To investigate this pathway, I combine experimental political discussion, AI-mediated conversations, and transcript-based measurement to examine recursive reflection and explanatory-framework reorganization as they unfold during political conversation. Together, these studies suggest that interventions traditionally understood as persuasion may sometimes produce belief revision by prompting citizens to recursively evaluate the adequacy of their own explanatory frameworks rather than simply transmitting new political beliefs.",
         ],
         status: "Under Review",
         links: [
@@ -64,7 +64,7 @@ export const researchClaims: ResearchClaim[] = [
         title: "Beyond Belief: Explanatory Frameworks as a Cognitive Architecture",
         status: "Theory Paper",
         description: "Develops a general theory of explanatory frameworks as higher-order cognitive architectures that organize beliefs, values, identities, and experience into coherent understandings of the world.",
-        abstract: "Human beings do not merely accumulate beliefs. They organize beliefs, values, identities, and experiences into explanatory structures that allow them to make sense of themselves and the world. Although existing research offers powerful accounts of belief formation, cognitive organization, explanation, and belief revision, many approaches treat beliefs, narratives, or representations as the primary cognitive objects of interest. I argue that these phenomena are more fruitfully understood as components of higher-order explanatory frameworks: cognitive architectures that integrate diverse forms of information into coherent understandings and that are periodically reorganized as new experiences accumulate. The article develops a general theory of explanatory frameworks, identifies their defining properties, distinguishes them from related concepts, and advances a set of theoretical propositions concerning their organization, growth, and revision. Finally, I argue that recent advances in conversational elicitation make explanatory frameworks empirically observable, opening the possibility of studying them directly rather than inferring them indirectly from isolated beliefs or attitudes. Reconceptualizing human reasoning around explanatory frameworks offers a foundation for research on learning, judgment, belief revision, and political reasoning.",
+        abstract: "Human beings do not merely accumulate beliefs. They organize beliefs, values, identities, and experiences into explanatory structures that allow them to make sense of themselves and the world. Although existing research offers powerful accounts of belief formation, cognitive organization, explanation, and belief revision, many approaches treat beliefs, narratives, or representations as the primary cognitive objects of interest. I argue that these phenomena are more fruitfully understood as components of higher-order explanatory frameworks: cognitive architectures that integrate diverse forms of information into coherent understandings and that are periodically reorganized as new experiences accumulate. The article develops a general theory of explanatory frameworks, identifies their defining properties, distinguishes them from related concepts, and advances a set of theoretical propositions concerning their organization, growth, and revision. Finally, I argue that recent advances in conversational elicitation provide empirical access to explanatory-framework organization and revision, allowing researchers to study these structures beyond what can be inferred from isolated beliefs or attitudes. Reconceptualizing human reasoning around explanatory frameworks offers a foundation for research on learning, judgment, belief revision, and political reasoning.",
       },
       {
         id: "architecture-of-understanding",
@@ -111,13 +111,13 @@ export const researchClaims: ResearchClaim[] = [
   },
   {
     id: "claim-02-direct-observation",
-    title: "Explanatory Frameworks Can Be Directly Observed",
-    mapTitle: "Explanatory frameworks can be directly observed.",
+    title: "Explanatory Frameworks Can Be Observed Through Conversation",
+    mapTitle: "Conversation reveals observable traces of explanatory-framework organization and revision.",
     shortTitle: "Direct Observation of Explanatory Frameworks",
-    question: "How can explanatory frameworks be observed directly rather than inferred indirectly from isolated beliefs or attitudes?",
+    question: "How can conversational data reveal the organization and revision of explanatory frameworks beyond what can be inferred from isolated beliefs or attitudes?",
     summary: "Develops conversational methods for observing explanatory frameworks as they emerge and reorganize in real time.",
-    contribution: "This research develops conversational and computational methods to elicit explanatory frameworks and track how they emerge, change, and reorganize in real time.",
-    evidence: "AI-mediated conversation, transcript coding, experiments, and computational analysis make explanatory frameworks directly observable rather than latent constructs inferred from static responses.",
+    contribution: "This research develops conversational and computational methods to elicit explanations and identify behavioral and linguistic patterns associated with how explanatory frameworks are organized and revised during conversation.",
+    evidence: "AI-mediated conversation, transcript coding, experiments, and computational analysis provide observable evidence about the organization and revision of explanatory frameworks beyond what can be inferred from static responses.",
     nextQuestions: "Can conversational methods measure frameworks beyond politics? Can AI improve measurement reliability and validity? What becomes observable when reasoning is studied dynamically?",
     relatedClaimIds: ["claim-01-framework-construction", "claim-03-recursive-learning"],
     projects: [

@@ -65,7 +65,7 @@ export function ClaimFrameworkFigure() {
 
   return <figure ref={ref} className={`claim-framework-figure ${isActive ? "is-animating" : ""}`} aria-labelledby={figureTitleId} aria-describedby={`${figureDescriptionId} ${figureCaptionId}`}>
     <h3 id={figureTitleId}>Framework Construction, Challenge, and Reorganization</h3>
-    <p className="sr-only" id={figureDescriptionId}>A stable explanatory framework tests an external challenge, recognizes that its existing account no longer fits, and reorganizes relationships among continuing identity, value, principle, and policy commitments.</p>
+    <p className="sr-only" id={figureDescriptionId}>When individuals encounter a challenge to an existing explanation, they may recognize that its justificatory structure no longer adequately supports their judgment and reorganize relationships among continuing identity, value, principle, and policy commitments.</p>
     <div className="claim-framework-panels">
       {panels.map((panel, index) => <div className={`claim-framework-panel panel-${index + 1}`} key={panel.number}>
         <p><span>{panel.number}</span>{panel.title}</p>
@@ -73,6 +73,6 @@ export function ClaimFrameworkFigure() {
         {index < panels.length - 1 && <span className="claim-framework-arrow" aria-hidden="true"/>}
       </div>)}
     </div>
-    <figcaption id={figureCaptionId}>Explanatory framework change can occur through the reorganization of relationships among existing commitments rather than the simple replacement of individual beliefs.</figcaption>
+    <figcaption id={figureCaptionId}>Explanatory-framework reorganization can involve changes in the commitments themselves or in the relationships, priorities, scope, or decision rules through which those commitments support a political judgment.</figcaption>
   </figure>;
 }

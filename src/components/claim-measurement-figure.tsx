@@ -42,7 +42,7 @@ export function ClaimMeasurementFigure() {
   const linked = (id: string) => activeId ? highlightMap[activeId]?.includes(id) : false;
 
   return <figure ref={ref} className={`claim-measurement-figure ${isActive ? "is-animating" : ""}`} aria-labelledby={titleId} aria-describedby={`${descriptionId} ${captionId}`}>
-    <h3 id={titleId}>Conversation, Coding, and Observed Explanatory Framework</h3>
+    <h3 id={titleId}>Conversation, Coding, and Evidence of Explanatory Organization</h3>
     <p className="sr-only" id={descriptionId}>A transcript feed becomes coded explanatory objects, revealing a framework in which a challenge produces recognition that the decision rule may be inadequate, without showing completed revision.</p>
     <div className="claim-measurement-panels">
       <section className="claim-measurement-panel conversation-panel" aria-labelledby="conversation-panel-title">
@@ -88,6 +88,6 @@ export function ClaimMeasurementFigure() {
       </section>
     </div>
     <p className="measurement-source-note">Illustrative excerpts from an anonymized study transcript.</p>
-    <figcaption id={captionId}>Conversational data can reveal both the components of an explanatory framework and the recursive processes through which those components are connected, tested, and revised.<span>Transcript coding makes explanatory framework reorganization directly observable.</span></figcaption>
+    <figcaption id={captionId}>Conversational data can reveal both the components of an explanatory framework and observable patterns of reasoning through which those components are connected, evaluated, and revised.<span>Transcript coding therefore provides a way to identify behavioral and linguistic traces of explanatory-framework organization and revision as they unfold during conversation.</span></figcaption>
   </figure>;
 }
